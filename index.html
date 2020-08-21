@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Solution for Technigo Coding Challenge - Breakpoints</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <main>
+      <section>
+        <p>Let me guess, you are using a</p>
+        <h1><div class="unit">.</div></h1>
+      
+        <h2>How can I tell? The answer is Breakpoints.</h2>
+
+        <p>
+          Depending on which unit you are using when surfing the internet, 
+          a well built site will adjust it's design to fit your screen. For example, 
+          if you are using an iPhone, the headers would probably be adjusted to fit 
+          your screen by shrinking their size, the margins might be a bit smaller because
+          the available space is limited and so on. Defining the different formats is done
+          by adding <span class="underline">Breakpoints</span> using Media Queries.
+        </p> 
+
+        <p style="font-style: italic;" id="note">
+          Psst! Try to change the size of your browser window to see if the title changes! 
+        </p>
+      
+        <p>
+          To understand the workings of this you could say that all screens have a 
+          width of "x" pixels. An iPhone 6 has a width of 750, and a standard 
+          laptop screen usually around 1920. By telling the browser to look for 
+          a maximum (or minimum) width (or other selector), you can specify how a specific 
+          element should appear on one specific device. 
+        </p>
+
+        <hr class="solid">
+
+        <h2>How does it work?</h2>
+        <p>
+          The syntax used is <span class="underline">@media</span>. To chose which selector that will "activate" a change of
+          settings, you type in that chosen selector (for example max-width) and a value within two brackets. 
+          Follow these upp with a set of curly brackets in which you add the selectors you wish
+          to change. For example:
+        </p>
+        
+        <p class="code">@media (max-width:600px) {<br>
+          p {color:red;}
+        <br>}</p>
+
+        <p>
+          This will change the font color of all text in the p-tag to red, <br>
+          on a unit that has a maximum width of 600 pixels.
+        </p>
+
+        <hr class="solid">
+
+        <h2>Want to learn more?</h2>
+            <div class="box">
+              <h3>Read</h3>
+              <div class="links">
+                1. <a href="https://www.w3schools.com/cssref/css3_pr_mediaquery.asp">w3 Schools - CSS @media Rule</a><br>
+                2. <a href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp">w3 Schools - Responsive Web Design - Media Queries</a><br>
+                3. <a href="https://css-tricks.com/snippets/css/media-queries-for-standard-devices/">Media Queries for Standard Devices</a>
+              </div>
+            </div>
+
+            <div class="box">
+              <h3>Watch</h3>
+              <div class="links">
+                <a href="https://www.youtube.com/watch?v=2KL-z9A56SQ">"Tutorial: Learn how to use CSS Media Queries in 
+                less than 5 minutes"</a>
+              </div>
+            </div>
+            
+            <div class="box">
+              <h3>Get inspired</h3>
+              <div class="links">
+              <a href="https://mediaqueri.es/">Mediaqueri.es</a>
+              </div>
+            </div>
+          
+          </section>
+
+  </main>
+</body>
+
+</html>
